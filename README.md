@@ -34,7 +34,7 @@ Sebagai solusi, pendekatan berbasis **machine learning** menawarkan kemampuan un
 - Terdapat outlier pada fitur person_age, person_income, person_emp_length, loan_amnt, loan_int_rate, loan_percent_income, cb_person_cred_hist_length
 
 ### 🔗 Variabel pada Credit Risk Dataset adalah sebagai berikut :
-- **Kolom Kategori** :
+- **Kolom Numerik** :
 1. **person_age** : Usia calon peminjam
 2. **person_income** : Pendapatan tahunan calon peminjam
 3. **person_emp_length** : Lama masa kerja calom peminjam (dalam tahun)
@@ -44,7 +44,7 @@ Sebagai solusi, pendekatan berbasis **machine learning** menawarkan kemampuan un
 7. **cb_person_cred_hist_length** : Durasi riwayat kredit
 8. **loan_status : Status pnjaman**, 0 = Tidak gagal bayar dan 1 = gagal bayar
 
-- **Kolom Numerik** :
+- **Kolom Kategori** :
 1. **person_home_ownership** : Status kepemilikan tempat tinggal peminjam
 2. **loan_intent** : Tujuan pinjaman
 3. **loan_grade** : Tingkat pinjaman
@@ -52,7 +52,7 @@ Sebagai solusi, pendekatan berbasis **machine learning** menawarkan kemampuan un
 
 ### 📊 Exploratory Data Analysis (EDA)
 #### **1. EDA - Deskripsi Variabel**
-Pada tahap ini EDA deskripsi variabel ini digunakan untuk, memahami struktur dan karakteristik data (data understanding) yang digunakan untuk mengenali tipe data, mendeteksi nilai yang hilang atau duplikat, melihat adanya outlier, dsb. Tujuannya sebagai dasar dalam pengambilan keputusan untuk analisis selanjutnya.
+Pada tahap ini EDA-deskripsi variabel digunakan untuk, memahami struktur dan karakteristik data (data understanding) yang digunakan untuk mengenali tipe data, mendeteksi nilai yang hilang atau duplikat, melihat adanya outlier, dsb. Tujuannya sebagai dasar dalam pengambilan keputusan untuk analisis selanjutnya.
 #### **2. EDA - Univariate Analisis**
 - **Fitur Kategorikal** :
 

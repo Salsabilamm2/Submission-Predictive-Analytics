@@ -161,4 +161,15 @@ Secara keseluruhan, **XGBoost** adalah algoritma yang dapat dipilih untuk melaku
 ---
 
 ## 📑 Referensi
+Berikut adalah cara menuliskan referensi tersebut di bagian akhir `README.md` kamu dengan format Markdown yang rapi:
 
+---
+
+## 📚 Referensi
+
+1. [Memahami Confusion Matrix, Accuracy, Precision, Recall, Specificity, dan F1-Score](https://esairina.medium.com/memahami-confusion-matrix-accuracy-precision-recall-specificity-dan-f1-score-610d4f0db7cf) - oleh Esairina (Medium)
+2. [Memahami dan Menerapkan Matriks Evaluasi ROC AUC dalam Machine Learning](https://medium.com/@andimrinaldisaputraa/memahami-dan-menerapkan-matriks-evaluasi-roc-auc-dalam-machine-learning-4468e5fcb9a) - oleh Andi Mrinaldi Saputra (Medium)
+3. [Evaluasi Model Machine Learning Menggunakan Confusion Matrix, Precision, Recall, F1-score dan ROC](https://ejournal.uksw.edu/itexplore/article/view/14754) – IT Explore, Universitas Kristen Satya Wacana
+4. [Analisis Data Menggunakan Algoritma KNN dan Naive Bayes pada Studi Kasus Kredit Macet](https://prin.or.id/index.php/JURRIMIPA/article/view/1470) – Jurnal Riset dan Rumpun Ilmu MIPA (JURRIMIPA)
+
+---

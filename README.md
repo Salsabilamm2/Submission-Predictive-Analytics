@@ -43,31 +43,24 @@ Sebagai solusi, pendekatan berbasis **machine learning** menawarkan kemampuan un
 6. **loan_percent_income** : Presentase pinjaman terhadap pendapatan
 7. **cb_person_cred_hist_length** : Durasi riwayat kredit
 8. **loan_status : Status pnjaman**, 0 = Tidak gagal bayar dan 1 = gagal bayar
-
 - **Kolom Numerik** :
 1. **person_home_ownership** : Status kepemilikan tempat tinggal peminjam
 2. **loan_intent** : Tujuan pinjaman
 3. **loan_grade** : Tingkat pinjaman
 4. **cb_person_default_on_file** : Riwayat default atau gagal bayar (YES/NO)
-
 ### 📊 Exploratory Data Analysis (EDA)
 #### **1. EDA - Deskripsi Variabel**
 Pada tahap ini EDA deskripsi variabel ini digunakan untuk, memahami struktur dan karakteristik data (data understanding) yang digunakan untuk mengenali tipe data, mendeteksi nilai yang hilang atau duplikat, melihat adanya outlier, dsb. Tujuannya sebagai dasar dalam pengambilan keputusan untuk analisis selanjutnya.
 #### **2. EDA - Univariate Analisis**
 - **Fitur Kategorikal** :
-
 Mayoritas peminjam tinggal di tempat sewa (Rent), dengan tujuan pinjaman terbanyak untuk pendidikan (Education). Grade pinjaman paling umum adalah A, dan sebagian besar peminjam tidak memiliki riwayat gagal bayar (kategori N pada cb_person_default_on_file).
 - **Fitur Numerik** :
-
 Berdasarkan distribusi fitur numerik, khususnya pada fitur loan_status yang sebagai target, bahwa Mayoritas pinjaman berstatus lancar (0),dan hanya sebagian kecil yang gagal bayar (1). Artinya, sebagian besar peminjam dalam data ini berhasil membayar pinjamannya dengan lancar, sementara hanya sebagian kecil yang mengalami gagal bayar.
 #### **3. EDA - Multivariate Analisis**
 - **Fitur Kategorikal** :
-
 Fitur kategori seperti person_home_ownership, loan_intent, loan_grade, dan cb_person_default_on_file memiliki pengaruh signifikan terhadap loan_status. Risiko gagal bayar lebih tinggi pada kategori tertentu seperti sewa rumah, tujuan pinjaman untuk medis/debt consolidation, serta pada peminjam dengan grade rendah atau riwayat default sebelumnya. Hal ini menunjukkan bahwa fitur-fitur kategori berperan penting dalam menentukan status kelayakan pinjaman.
 - **Fitur Numerik** :
-
 **Visualisasi dengan Pairplot** : Berdasarkan visualisasi pairplot terlihat bahwa fitur loan_percent_income, loan_int_rate, dan person_income memiliki korelasi terhadap fitur loan_status. Sedangkan fitur lainnya memiliki korelasi yang lemah karena sebarannya tidak membentuk pola
-
 **Visualisasi dengan headmap** : 
 Fitur numerik dengan korelasi tertinggi terhadap loan_status adalah loan_percent_income, loan_int_rate, dan person_income. Sementara fitur lain seperti person_age, person_emp_length, dan cb_person_cred_hist_length memiliki korelasi sangat lemah atau hampir tidak ada, sehingga akan dipertimbangkan untuk dihapus pada tahap Data Preparation.
 
@@ -108,7 +101,6 @@ Penjelasan metrik evaluasi yang digunakan :
 - f1-Score : metrik evaluasi yang mencerminkan keseimbangan antara Presisi (Precision) dan Sensitivitas (Recall)
 2. **Confussion matrix** : alat yang digunakan untuk menggambarkan kinerja model klasifikasi pada data uji yang sudah diketahui hasil sebenarnya.
 3. **ROC-AUC** : metrik evaluasi yang digunakan untuk mengukur kinerja model klasifikasi, terutama dalam konteks biner (dua kelas). Metrik ini fokus pada kemampuan model untuk membedakan antara kelas positif dan negatif dengan memperhatikan trade-off antara tingkat True Positive Rate (TPR) dan tingkat False Positive Rate (FPR).
-
 ### 💡 Hasil Evaluasi Berdasarkan Metrik Evaluasi
 
 | Model              | Accuracy | F1 Score | ROC-AUC |
@@ -129,7 +121,6 @@ Penjelasan metrik evaluasi yang digunakan :
 - Memiliki performa terbaik di semua metrik evluasi
 - F1 Score tertinggi, menunjukkan Keseimbangan precision & recall sangat baik
 - ROC-AUC tertinggi, menunjukan sangat baik dalam membedakan nasabah gagal bayar dan tidak
-
 ### 💡 Hasil Evaluasi Berdasarkan Data Aktual 
 1. **K-Nearest Neighbor (KNN)**: 1
 2. **Random Forest (RF)**: 1
